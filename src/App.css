@@ -1,0 +1,144 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: "Poppins", sans-serif;
+
+  /* FONT SIZES DESKTOP */
+  /* --text-900: 80px;
+  --text-700: 35px;
+  --text-650: 25px;
+  --text-600: 22px;
+  --text-550: 20px; */
+
+  /* FONT SIZES MOBILE */
+  --text-900: 40px;
+  --text-800: 35px;
+  --text-700: 30px;
+  --text-650: 25px;
+  --text-600: 22px;
+  --text-550: 20px;
+
+  /* FONT WEIGHT */
+  --font-lighter: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semi-bold: 500;
+  --font-bold: 600;
+  --font-bolder: 700;
+
+  /* COLORS */
+  --clr-grey-200: rgb(202, 202, 202);
+  --clr-grey-900: grey;
+
+  --clr-grid-2: #eff8e2;
+  --clr-grid-3: #f7f0e7;
+  --clr-grid-4: #e2f3f8;
+  --clr-grid-5: #ede2fa;
+
+  /* SPACE */
+  /* --space-200: 200px;
+  --space-100: 100px;
+  --space-50: 50px; */
+
+  /* SPACE MOBILE */
+  --space-200: 150px;
+  --space-150: 100px;
+  --space-100: 80px;
+  --space-50: 30px;
+
+  /* LETTER SPACING */
+  --l-spacing-100: -0.01em;
+  --l-spacing-200: -0.02em;
+  --l-spacing-300: -0.03em;
+
+  /* Z-INDEX */
+  --index-1: 1;
+  --index-2: 2;
+  --index-3: 3;
+  --index-4: 4;
+  --index-5: 5;
+
+  /* UTILITIES */
+  --container-max_width: ;
+  --activity-card-height: 250px;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UTILITY CLASSES */
+.disable-scroll {
+  overflow-y: hidden;
+}
+.container {
+  /* max-width: var(--container-max_width); */
+  /* margin: auto; */
+  margin-inline: 1.5rem;
+}
+.bg-primary {
+  background: #edf3f7;
+}
+.bg-secondary {
+  background: #fff5e6;
+}
+.text-white {
+  color: white;
+}
+.flex {
+  display: flex;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-200 {
+  margin-bottom: var(--space-200);
+}
+.mb-150 {
+  margin-bottom: var(--space-150);
+}
+.py-100 {
+  padding-block: var(--space-100);
+}
+
+.text-700 {
+  font-size: var(--text-700);
+}
+.text-600{
+  font-size: var(--text-600);
+}
+.text-650{
+  font-size: var(--text-650);
+}
+.text-550 {
+  font-size: var(--text-550);
+}
+.font-regular {
+  font-weight: var(--font-regular);
+}
+.font-light {
+  font-weight: var(--font-light);
+}

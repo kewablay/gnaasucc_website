@@ -1,0 +1,81 @@
+nav {
+  background: white;
+  padding-block: 1.2rem;
+}
+
+nav a {
+  color: black;
+  font-size: var(--text-800);
+  /* transition-delay: 1s; */
+  transition: .5s ease;
+}
+.logo {
+  font-weight: var(--font-bolder);
+  font-size: 20px;
+  letter-spacing: var(--l-spacing-200);
+  transition: 1.5s ease;
+}
+.menu-backdrop {
+  position: fixed;
+  background: black;
+  left: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: var(--index-5);
+}
+.navlinks {
+  display: flex;
+  font-weight: ;
+  flex-direction: column;
+  margin-left: 20%;
+  font-weight: var(--font-lighter);
+}
+
+.menu-icon {
+  border: none;
+  background-color: transparent;
+  height: 1.2rem;
+}
+
+.menu-icon .line {
+  width: 1.6rem;
+  height: 2px;
+  background: black;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+.line:first-child {
+  margin-bottom: 0.35rem;
+}
+
+.showMenu .menu-backdrop {
+  left: 0;
+}
+.showMenu a {
+  color: var(--clr-grey-200);
+  transition: 1s ease;
+  transition-delay: .2s;
+}
+.showMenu .menu-icon,
+.showMenu .logo {
+  z-index: 6;
+  color: var(--clr-grey-200);
+}
+.showMenu .line {
+  background-color: var(--clr-grey-200);
+  transform: rotate(-35deg);
+  height: 1.2px;
+}
+.showMenu .line:first-child {
+  transform: rotate(35deg);
+  margin-bottom: -0.1rem;
+}
+.showMenu #menu-title {
+  color: var(--clr-grey-900);
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}

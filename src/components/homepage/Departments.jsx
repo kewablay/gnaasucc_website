@@ -3,6 +3,7 @@ import '../../assets/css/homepage/Departments.css'
 
 export function Departments() {
   return (
-    <div>Departments</div>
+    // <section className="grid-2 mb-200">
+    <section></section>
   )
 }

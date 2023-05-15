@@ -7,9 +7,6 @@
     width: 100%;
     height: auto;
 }
-.e-content{
-    font-weight: var(--font-light);
-}
 .e-content h3{
     letter-spacing: var(--l-spacing-300);
     font-weight: var(--font-bold);

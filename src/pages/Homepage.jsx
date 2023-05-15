@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar, Header,SocialMedia, Footer} from '../components/layout'
-import { WeeklyActivities, Events, Departments,
+import { WeeklyActivities, Events, Departments, UpcomingActivities,
    WeMakePeopleSmile, Outreach, SupportUs, LocateUs } from '../components/Homepage'
 
 
@@ -11,6 +11,7 @@ function Homepage() {
        <Header />
        <WeeklyActivities />
        <Events /> 
+       <UpcomingActivities /> 
        <Departments />
        <WeMakePeopleSmile />
        <Outreach />

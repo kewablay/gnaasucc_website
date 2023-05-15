@@ -101,6 +101,11 @@ a {
 .text-white {
   color: white;
 }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 .flex {
   display: flex;
 }
@@ -127,10 +132,10 @@ a {
 .text-700 {
   font-size: var(--text-700);
 }
-.text-600{
+.text-600 {
   font-size: var(--text-600);
 }
-.text-650{
+.text-650 {
   font-size: var(--text-650);
 }
 .text-550 {
@@ -141,4 +146,20 @@ a {
 }
 .font-light {
   font-weight: var(--font-light);
+}
+
+/*  */
+.section-title {
+  font-weight: var(--font-semi-bold) !important;
+  font-size: var(--text-650) !important;
+}
+.scroll-x {
+  overflow-x: scroll !important;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
 }

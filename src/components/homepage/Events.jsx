@@ -8,7 +8,7 @@ export function Events() {
     <section className="mb-200 py-100 bg-primary">
       <div className="content-wrapper grid-2 container">
         <div className="e-content">
-          <h3 className="text-650">Yearly Events</h3>
+          <h3 className="section-title">Yearly Events</h3>
           <p className="text-600">
             From musical concerts to conferences, we've got you covered with an
             exciting lineup of events to suit your taste!

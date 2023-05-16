@@ -6,3 +6,4 @@ export { SupportUs } from "./SupportUs";
 export { UpcomingActivities } from "./UpcomingActivities";
 export { WeeklyActivities } from "./WeeklyActivities";
 export { WeMakePeopleSmile } from "./WeMakePeopleSmile";
+export { Developers } from "./Developers";

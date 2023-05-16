@@ -1,0 +1,50 @@
+.developers .section-title {
+  font-size: var(--text-700);
+}
+.dev-container {
+  /* background: black; */
+  border: 2px solid black;
+  padding: 1.5rem;
+  margin-top: 60px;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.dev__image {
+  width: 120px;
+  height: 120px;
+  background: grey;
+  border-radius: 50%;
+}
+.dev__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10%;
+  right: 10%;
+}
+.dev__card .line {
+  height: 2px;
+  background-color: var(--clr-grey-200);
+  margin-top: 1.5rem;
+}
+
+.dev__card {
+  position: relative;
+  flex: none;
+  width: 13rem;
+  background: white;
+  padding: 1.5rem;
+}
+
+.dev__card-content .name {
+  font-size: calc(var(--text-600) + 5px);
+  font-weight: var(--font-regular);
+  margin-bottom: 0;
+  letter-spacing: var(--l-spacing-300);
+}
+
+.dev__card .role {
+  font-size: 15px;
+  font-weight: var(--font-light);
+}

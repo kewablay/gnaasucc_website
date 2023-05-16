@@ -1,0 +1,13 @@
+.social-media {
+  overflow: hidden;
+}
+
+.social-media .social-icons {
+  margin: auto;
+}
+
+.section-image {
+  width: 115%;
+  margin-top: 1rem;
+  transform: translate(-9%, 10%);
+}

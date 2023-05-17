@@ -46,3 +46,18 @@
     transform: rotate(-10deg);
   }
 }
+
+@media (min-width: 900px) {
+  .social-media {
+    height: 38rem;
+  }
+  .section-image img {
+    width: 50% !important;
+  }
+  .section-image img:first-child {
+    left: -14%;
+  }
+  .section-image img:last-child {
+    right: -18.5%;
+  }
+}

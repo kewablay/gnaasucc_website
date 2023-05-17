@@ -41,7 +41,7 @@ footer .social-icons img {
 }
 @media (min-width: 768px) {
   footer .container {
-    max-width: 540px;
+    max-width: 80%;
     margin-inline: auto;
   }
   footer .content-wrapper {
@@ -79,5 +79,13 @@ footer .social-icons img {
   }
   .flex-col:nth-child(4) {
     grid-area: 1 / 2 / 2 / 3;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .footer .container{
+    max-width: 1024px;
+    margin-inline: auto;
   }
 }

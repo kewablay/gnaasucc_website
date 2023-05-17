@@ -2,6 +2,8 @@ import React from "react";
 import "../../assets/css/layout/Header.css";
 import bgVideo from "../../assets/bg.mp4";
 import Poster from "../../assets/images/poster.png";
+import vector1 from "../../assets/icons/vector1-emoji.png";
+import vector2 from "../../assets/icons/vector2-church.png";
 
 export function Header() {
   return (
@@ -11,7 +13,15 @@ export function Header() {
         <source src={bgVideo} />
       </video>
       <h2 className="introText">
-        WELCOME <span id="imj"></span> TO <span id="imj"></span> GNAAS UCC
+        WELCOME
+        <span id="imj">
+          <img src={vector1} alt="" />
+        </span>
+        TO
+        <span id="imj">
+          <img src={vector2} alt="" />
+        </span>
+        GNAAS UCC
       </h2>
     </header>
   );

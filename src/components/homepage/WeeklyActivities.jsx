@@ -21,8 +21,7 @@ export function WeeklyActivities() {
       <div className="activity grid-title">
         <h3 className="text-650">Weekly Activities</h3>
         <p className="text-550">
-          We've got an exciting lineup of activities we perform on a weekly
-          basis.
+          We cultivate a stronger bond with God by engaing in Weekly activities.
         </p>
       </div>
       {activities.map((activity, index) => (

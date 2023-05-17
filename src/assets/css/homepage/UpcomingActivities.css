@@ -19,7 +19,7 @@
 }
 .u-event__image {
   background: white;
-  border: .5px solid var(--clr-grey-200);
+  border: 0.5px solid var(--clr-grey-200);
   height: 22rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -42,4 +42,11 @@
 .u-event__content small {
   font-size: 10px;
   font-weight: var(--font-lighter);
+}
+
+@media (min-width: 1040px) {
+  .upcoming {
+    max-width: 980px;
+    margin-inline: auto;
+  }
 }

@@ -2,12 +2,14 @@ import React from "react";
 import "../../assets/css/homepage/SupportUs.css";
 import mobile from "../../assets/icons/mobile.png";
 import bank from "../../assets/icons/bank.png";
+import rope from "../../assets/icons/rope.png";
 
 export function SupportUs() {
   return (
-    <section className="bg-secondary mb-200 py-100">
+    <section className="support bg-secondary mb-200 py-100">
+      <img id="arrow" src={rope} alt="." />
       <div className="content-wrapper container">
-        <div className="content-grid">
+        <div className="content-grid" id="s-content">
           <h3 className="section-title">
             Support our efforts with a charitable donation.
           </h3>

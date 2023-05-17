@@ -77,6 +77,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -240,22 +241,29 @@ a {
     margin-block: auto;
   }
 }
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   :root {
     --text-900: 50px;
-    --text-800: 35px;
-    --text-700: 30px;
-    --text-650: 25px;
-    --text-600: 22px;
-    --text-550: 20px;
+    --text-650: 30px;
+    --space-100: 100px;
+    --space-200: 180px;
+    
   }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
   .grid-2 {
     grid-template-columns: 1fr, 1fr;
   }
   .container {
     max-width: 720px;
     margin-inline: auto;
+  }
+}
+
+@media (min-width: 993px){
+  :root{
+    --text-900: 60px;
   }
 }
 

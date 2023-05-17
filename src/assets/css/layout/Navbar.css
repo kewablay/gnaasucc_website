@@ -7,7 +7,8 @@ nav a {
   color: black;
   font-size: var(--text-800);
   /* transition-delay: 1s; */
-  transition: .5s ease;
+  margin-bottom: .4rem;
+  transition: 0.5s ease;
 }
 .logo {
   font-weight: var(--font-bolder);
@@ -29,7 +30,6 @@ nav a {
 }
 .navlinks {
   display: flex;
-  font-weight: ;
   flex-direction: column;
   margin-left: 20%;
   font-weight: var(--font-lighter);
@@ -58,7 +58,7 @@ nav a {
 .showMenu a {
   color: var(--clr-grey-200);
   transition: 1s ease;
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 .showMenu .menu-icon,
 .showMenu .logo {
@@ -78,4 +78,46 @@ nav a {
   color: var(--clr-grey-900);
   font-size: 15px;
   letter-spacing: 0.2em;
+}
+
+@media (min-width: 576px){
+  .showMenu .menu-backdrop {
+    left: 20%;
+  }
+  nav a {margin-bottom: 1.2rem}
+  .menu-backdrop{
+    padding-top: 40%;
+  }
+  .showMenu .logo{
+    z-index: 5;
+  }
+}
+
+@media (min-width: 768px) {
+  nav a {
+    color: black !important;
+    font-size: var(--text-500);
+    font-weight: var(--font-regular);
+    margin: 0
+  }
+  nav a + a {
+    margin-left: 1.2rem;
+  }
+  .menu-backdrop {
+    position: initial;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    /* border: 1px solid black; */
+  }
+  .navlinks {
+    margin: 0;
+    flex-direction: row;
+
+  }
+  #menu-title, .menu-icon {
+    display: none;
+  }
 }

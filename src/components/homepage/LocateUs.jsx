@@ -1,12 +1,13 @@
 import React from "react";
 import "../../assets/css/homepage/LocateUs.css";
 import map from "../../assets/images/map.png";
+import roundedArrow from '../../assets/icons/rounded-arrow.png'
 
 export function LocateUs() {
   return (
     <section className="mb-200 container grid-2">
       <div className="my-auto">
-        <h3 className="section-title">Locate Us</h3>
+        <h3 className="section-title">Locate Us <span id="rounded-arrow"><img src={roundedArrow} alt="." /></span></h3>
         <p className="section-content">
           At central region, university of Cape Coast Amamoma. We've reserved a
           seat for you.

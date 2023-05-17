@@ -12,6 +12,7 @@
   border-radius: 1rem;
   display: flex;
   gap: 1.5rem;
+  /* transition: scroll 50s cubic-bezier(0.075, 0.82, 0.165, 1) */
 }
 .u-event {
   flex: none;

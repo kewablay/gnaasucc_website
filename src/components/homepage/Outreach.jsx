@@ -1,6 +1,5 @@
 import React from "react";
 import "../../assets/css/homepage/Outreach.css";
-import outreach from "../../assets/eventHero.gif";
 import hero3 from "../../assets/images/hero3.png";
 
 export function Outreach() {

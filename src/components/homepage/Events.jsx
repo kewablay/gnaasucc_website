@@ -1,7 +1,5 @@
 import React from "react";
 import "../../assets/css/homepage/Events.css";
-import eventImage from "../../assets/eventHero.webm";
-import eventGif from "../../assets/eventHero.gif";
 import eventHero from "../../assets/images/hero2.png";
 
 export function Events() {

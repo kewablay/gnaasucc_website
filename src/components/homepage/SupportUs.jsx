@@ -3,6 +3,7 @@ import "../../assets/css/homepage/SupportUs.css";
 import mobile from "../../assets/icons/mobile.png";
 import bank from "../../assets/icons/bank.png";
 import rope from "../../assets/icons/rope.png";
+import CircledText from "../utilities/CircledText";
 
 export function SupportUs() {
   return (
@@ -11,7 +12,7 @@ export function SupportUs() {
       <div className="content-wrapper container">
         <div className="content-grid" id="s-content">
           <h3 className="section-title">
-            Support our efforts with a charitable donation.
+            Support our efforts with a charitable <CircledText text={"donation."} />
           </h3>
           <p className="section-content">
             Help us spread God's love by donating. Your support makes a

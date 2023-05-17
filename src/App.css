@@ -88,7 +88,9 @@ a {
 .disable-scroll {
   overflow-y: hidden;
 }
-
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
 .bg-primary {
   background: #edf3f7;
 }
@@ -215,7 +217,7 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 390px) and (max-width: 640px) {
   .container {
     margin-inline: 12%;
   }
@@ -247,7 +249,6 @@ a {
     --text-650: 30px;
     --space-100: 100px;
     --space-200: 180px;
-    
   }
 }
 
@@ -261,8 +262,8 @@ a {
   }
 }
 
-@media (min-width: 993px){
-  :root{
+@media (min-width: 993px) {
+  :root {
     --text-900: 60px;
   }
 }
@@ -275,7 +276,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .container{
+  .container {
     max-width: 1024px;
     margin-inline: auto;
   }

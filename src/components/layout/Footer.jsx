@@ -6,8 +6,13 @@ export function Footer() {
   return (
     <footer className="footer py-100 bg-dark">
       <div className="content-wrapper container">
-        <div className="logo flex-center mb-100">
+        <div className="logo  mb-100">
           <h3 className="text-660">GNAAS UCC </h3>
+        </div>
+
+        <div class="flex-col gap-1 mb-100">
+          <p>Social Media</p>
+          <SocialLinks />
         </div>
 
         <div class="flex-col gap-1 mb-100">
@@ -20,11 +25,6 @@ export function Footer() {
           <a href="#">About Us</a>
           <a href="#">Contact Us</a>
           <a href="#">Call Us Now</a>
-        </div>
-
-        <div class="flex-col gap-1 mb-100">
-          <p>Social Media</p>
-          <SocialLinks />
         </div>
       </div>
     </footer>

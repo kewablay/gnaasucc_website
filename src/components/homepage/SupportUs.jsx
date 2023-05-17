@@ -6,8 +6,8 @@ import bank from "../../assets/icons/bank.png";
 export function SupportUs() {
   return (
     <section className="bg-secondary mb-200 py-100">
-      <div className="content-wrapper container grid-2">
-        <div className="content-grid-2">
+      <div className="content-wrapper container">
+        <div className="content-grid">
           <h3 className="section-title">
             Support our efforts with a charitable donation.
           </h3>

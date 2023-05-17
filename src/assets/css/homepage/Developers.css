@@ -24,7 +24,7 @@
   right: 10%;
 }
 .dev__card .line {
-  height: 2px;
+  height: 1px;
   background-color: var(--clr-grey-200);
   margin-top: 1.5rem;
 }
@@ -47,4 +47,24 @@
 .dev__card .role {
   font-size: 15px;
   font-weight: var(--font-light);
+}
+
+@media (min-width: 428px) {
+  .dev-container {
+    border: none;
+    box-shadow: inset 5px 0px 12px 2px rgb(245, 244, 244);
+    padding-block: 2rem;
+  }
+  .dev__card {
+    border: 1px solid var(--clr-grey-200);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dev-container {
+    justify-content: center;
+    box-shadow: none;
+  }
 }

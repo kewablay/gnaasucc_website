@@ -11,7 +11,6 @@ export function Header() {
         <source src={bgVideo} />
       </video>
       <h2 className="introText">
-        {" "}
         WELCOME <span id="imj"></span> TO <span id="imj"></span> GNAAS UCC
       </h2>
     </header>

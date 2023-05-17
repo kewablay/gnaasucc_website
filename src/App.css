@@ -47,7 +47,7 @@
   /* SPACE MOBILE */
   --space-200: 150px;
   --space-150: 100px;
-  --space-100: 80px;
+  --space-100: 60px;
   --space-50: 30px;
 
   /* LETTER SPACING */
@@ -64,7 +64,7 @@
 
   /* UTILITIES */
   --container-max_width: ;
-  --activity-card-height: 250px;
+  --activity-card-height: 15.625rem;
 }
 html {
   width: 100vw;
@@ -87,11 +87,7 @@ a {
 .disable-scroll {
   overflow-y: hidden;
 }
-.container {
-  /* max-width: var(--container-max_width); */
-  /* margin: auto; */
-  margin-inline: 1.5rem;
-}
+
 .bg-primary {
   background: #edf3f7;
 }
@@ -179,6 +175,7 @@ a {
   font-weight: var(--font-semi-bold) !important;
   font-size: var(--text-650) !important;
   letter-spacing: var(--l-spacing-200);
+  line-height: 130.5%;
   /* margin-bottom: 0; */
 }
 .section-content {
@@ -199,4 +196,79 @@ a {
   display: flex;
   gap: 1rem;
   width: fit-content;
+}
+.img-div {
+  overflow: hidden;
+}
+.image-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 390px) {
+  .container {
+    /* max-width: var(--container-max_width); */
+    /* margin: auto; */
+    margin-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-inline: 12%;
+  }
+}
+
+/* @media (min-width: 577px){
+  .grid-2{
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .my-auto {
+    margin-block: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --text-900: 50px;
+    --text-800: 35px;
+    --text-700: 30px;
+    --text-650: 25px;
+    --text-600: 22px;
+    --text-550: 20px;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr, 1fr;
+  }
+  .container {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 940px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1024px;
+    margin-inline: auto;
+  }
 }

@@ -13,7 +13,8 @@
 }
 
 .marquee {
-  padding-block: 1.2rem;
+  padding-block: .7rem;
+  margin-top: 2rem;
   background: white;
   white-space: nowrap;
   width: 100%;
@@ -22,11 +23,11 @@
 .dept-pill {
   display: inline-block;
   font-size: 14px;
-  padding: 0.8rem 1.3rem;
+  padding: 0.7rem 1.3rem;
   /* background: var(--clr-grid-3); */
   border-radius: 500px;
   box-shadow: 0px 1px 6px rgba(148, 148, 148, 0.25);
-  border: 0.5px solid rgb(0, 0, 0);
+  /* border: 0.5px solid rgb(0, 0, 0); */
   width: fit-content;
   white-space: nowrap;
 }

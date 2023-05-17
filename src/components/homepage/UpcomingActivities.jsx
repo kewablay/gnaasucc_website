@@ -29,8 +29,8 @@ export function UpcomingActivities() {
     <section className="upcoming mb-200">
       <h3 className="text-650 section-title">Upcoming Events</h3>
       <div className="upcoming-container scroll-x hide-scrollbar mb-50">
-        {upcoming.map((event) => (
-          <div className="u-event">
+        {upcoming.map((event, index) => (
+          <div key={index} className="u-event">
             <div className="u-event__image">
               <img src={event.image} alt="eventImage" />
             </div>

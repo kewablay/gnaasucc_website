@@ -2,4 +2,5 @@
   height: 30rem;
   border-radius: 10px;
   background: grey;
+  border: 1px solid var(--clr-grey-200);
 }

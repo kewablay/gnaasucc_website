@@ -1,3 +1,10 @@
-.section-image img {
-  width: 100%;
+.outreach-image {
+  display: grid;
+  place-content: center;
+}
+@media (min-width: 640px) {
+  .outreach-image img {
+    width: 100%;
+  }
+
 }

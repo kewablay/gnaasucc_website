@@ -20,11 +20,11 @@ export function Developers() {
     },
   ];
   return (
-    <section className="developers mb-200 container">
+    <section className="developers container mb-200">
       <h3 className="section-title text-center">Developers</h3>
       <div className="dev-container scroll-x hide-scrollbar mb-50">
-        {developers.map((dev) => (
-          <div className="dev__card">
+        {developers.map((dev, index) => (
+          <div key={index} className="dev__card">
             <img src={linkedIn} alt="" className="dev__icon" />
             <div className="dev__image"></div>
             <div className="line"></div>

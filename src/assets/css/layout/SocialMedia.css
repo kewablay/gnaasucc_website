@@ -1,13 +1,48 @@
 .social-media {
   overflow: hidden;
 }
+.social-media .section-title {
+  margin-bottom: 2rem;
+}
 
 .social-media .social-icons {
   margin: auto;
 }
 
-.section-image {
+.section-image img {
   width: 115%;
   margin-top: 1rem;
   transform: translate(-9%, 10%);
+}
+.section-image img:last-child {
+  display: none;
+}
+
+.social-media .section-title {
+  max-width: 30rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .social-media {
+    height: 33rem;
+  }
+  .section-image {
+    position: relative;
+  }
+  .section-image img {
+    width: 65% !important;
+    position: absolute;
+  }
+
+  .section-image img:first-child {
+    display: initial;
+    left: -18%;
+    transform: rotate(10deg);
+  }
+  .section-image img:last-child {
+    display: initial;
+    right: -25%;
+    transform: rotate(-10deg);
+  }
 }

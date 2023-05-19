@@ -35,8 +35,8 @@ export function Departments() {
       </div>
       {/*  */}
       <marquee className="marquee scroll-x hide-scrollbar">
-        {departmentList.map((data) => (
-          <p className="dept-pill">{data}</p>
+        {departmentList.map((department, index) => (
+          <p key={department} className="dept-pill">{department}</p>
         ))}
       </marquee>
     </section>

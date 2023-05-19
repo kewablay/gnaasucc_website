@@ -15,6 +15,10 @@
   height: 120px;
   background: grey;
   border-radius: 50%;
+  overflow: hidden;
+}
+.dev__image img{
+  object-fit: cover;
 }
 .dev__icon {
   position: absolute;

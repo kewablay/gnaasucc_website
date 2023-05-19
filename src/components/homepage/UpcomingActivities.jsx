@@ -6,6 +6,7 @@ import seraphimPraies from "../../assets/images/seraphim-praise.jpeg";
 
 import Slider from "../utilities/Slider";
 import CircledText from "../utilities/CircledText";
+import useActivateSlider from "../../hooks/useActivateSlider";
 
 export function UpcomingActivities() {
   const upcoming = [
@@ -33,74 +34,80 @@ export function UpcomingActivities() {
   let mainSlider = null;
 
   // CHECK WHETHER TO ACTIVATE SLIDER
+
   useEffect(() => {
     console.log("useEffect triggered");
     const eventContainer = containerRef.current;
-    const disableSlider =
-      eventContainer.scrollWidth <= eventContainer.clientWidth;
-    console.log(
-      "scroll-width: ",
-      eventContainer.scrollWidth,
-      "clientWidth: ",
-      eventContainer.clientWidth
-    );
-    console.log(disableSlider);
-    if (disableSlider) {
-      console.log("disable triggered");
-      mainSlider.classList.add("disabled");
-    } else {
-      mainSlider.classList.remove("disabled");
-    }
+
+    const updateSlider = () => {
+      const disableSlider =
+        eventContainer.scrollWidth <= eventContainer.clientWidth;
+
+      if (disableSlider) {
+        mainSlider.classList.add("disabled");
+      } else {
+        mainSlider.classList.remove("disabled");
+      }
+    };
+
+    updateSlider();
+
+    const handleResize = () => {
+      updateSlider();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // cleanup function
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [mainSlider]);
 
   const handleScroll = (scrollOffset) => {
     const newScrollPosition = scrollPosition + scrollOffset;
-    console.log(containerRef);
+    // checkscrollend
+    checkScroll();
+    // checkscrollstart
+
     containerRef.current.scrollLeft = newScrollPosition;
     setScrollPosition(newScrollPosition);
   };
 
-  const handleScrollEnd = () => {
+  const checkScroll = () => {
     const container = containerRef.current;
     const maxScroll = container.scrollWidth - container.clientWidth;
-    const scrollEndReached = scrollPosition >= maxScroll;
-    console.log("scroll end : ", scrollEndReached);
+    const scrollEndReached =
+      scrollPosition >= maxScroll || scrollPosition >= 320;
+
+    const scrollStart = scrollPosition === 0 || scrollPosition <= 320;
+
     if (scrollEndReached) {
-      // Scroll position is at the end
-      // Disable forward arrow and enable back arrow
-      console.log("scroll end reached");
       scrollForwardButton.disabled = true;
       scrollBackButton.disabled = false;
-      console.log(scrollForwardButton);
-      return;
+      setScrollPosition(maxScroll);
     } else {
-      // Scroll position is not at the end
-      // Enable both forward and back arrows
       scrollForwardButton.disabled = false;
       scrollBackButton.disabled = false;
-      console.log("removed disabled");
-      console.log(scrollForwardButton);
     }
   };
 
   const scrollBack = () => {
-    console.log(scrollPosition);
-    if (scrollPosition !== 0) {
+    if (scrollPosition >= 320) {
       handleScroll(-320);
-      handleScrollEnd();
-    } else if (scrollPosition === 0) {
-      // Scroll position at start
-      // Disable back arrow
+    } else {
       scrollForwardButton.disabled = false;
       scrollBackButton.disabled = true;
+      setScrollPosition(0);
     }
+
     console.log("scroll back triggered");
   };
 
   const scrollForward = () => {
     handleScroll(320);
-    handleScrollEnd();
     console.log("scroll forward triggered");
+    // handleScrollEnd();
   };
 
   return (

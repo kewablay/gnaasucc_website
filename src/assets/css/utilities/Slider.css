@@ -1,5 +1,5 @@
-.disabled{
-  opacity: .2;
+.disabled {
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -18,20 +18,17 @@ button:disabled,
 button[disabled] {
   cursor: not-allowed;
   pointer-events: none;
-  border-color: rgba(0, 0, 0, 0.2);
+  /* border-color: rgba(0, 0, 0, 0.2); */
 }
-button[disabled] img {
+/* button[disabled] img {
   opacity: 0.2;
-}
+} */
 .prev,
 .next {
   border-radius: 50%;
-  /* border: 1px solid black; */
   padding: 0.7rem;
   background: transparent;
 }
 .prev {
   transform: rotate(-180deg);
 }
-
-

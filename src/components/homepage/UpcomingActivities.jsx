@@ -44,13 +44,12 @@ export function UpcomingActivities() {
       "clientWidth: ",
       eventContainer.clientWidth
     );
-    console.log(disableSlider)
+    console.log(disableSlider);
     if (disableSlider) {
       console.log("disable triggered");
-      mainSlider.classList.add('disabled');
-    }
-    else{
-      mainSlider.classList.remove('disabled')
+      mainSlider.classList.add("disabled");
+    } else {
+      mainSlider.classList.remove("disabled");
     }
   }, [mainSlider]);
 
@@ -105,7 +104,7 @@ export function UpcomingActivities() {
   };
 
   return (
-    <section className="upcoming mb-200">
+    <section className="upcoming mb-200" data-scroll-section>
       <h3 className="text-650 section-title">
         Upcoming <CircledText text={"Events"} />
       </h3>

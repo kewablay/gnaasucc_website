@@ -6,8 +6,7 @@ nav {
 nav a {
   color: black;
   font-size: var(--text-800);
-  /* transition-delay: 1s; */
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   transition: 0.5s ease;
 }
 .logo {
@@ -19,7 +18,7 @@ nav a {
 .menu-backdrop {
   position: fixed;
   background: black;
-  left: 100%;
+  left: 120%;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -27,6 +26,7 @@ nav a {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   z-index: var(--index-5);
+  /* z-index: 1000; */
 }
 .navlinks {
   display: flex;
@@ -80,15 +80,17 @@ nav a {
   letter-spacing: 0.2em;
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .showMenu .menu-backdrop {
     left: 20%;
   }
-  nav a {margin-bottom: 1.2rem}
-  .menu-backdrop{
+  nav a {
+    margin-bottom: 1.2rem;
+  }
+  .menu-backdrop {
     padding-top: 40%;
   }
-  .showMenu .logo{
+  .showMenu .logo {
     z-index: 5;
   }
 }
@@ -98,7 +100,8 @@ nav a {
     color: black !important;
     font-size: var(--text-500);
     font-weight: var(--font-regular);
-    margin: 0
+    margin: 0;
+    transition: none !important;
   }
   nav a + a {
     margin-left: 1.2rem;
@@ -111,13 +114,14 @@ nav a {
     margin: 0;
     background-color: white;
     /* border: 1px solid black; */
+    transition: none !important;
   }
   .navlinks {
     margin: 0;
     flex-direction: row;
-
   }
-  #menu-title, .menu-icon {
+  #menu-title,
+  .menu-icon {
     display: none;
   }
 }

@@ -4,7 +4,7 @@ import eventHero from "../../assets/images/hero2.png";
 
 export function Events() {
   return (
-    <section className="py-100 bg-primary mb-200 p-100">
+    <section className="py-100 bg-primary mb-200 p-100" data-scroll-section>
       <div className="content-wrapper grid-2 container">
         <div className="e-content my-auto">
           <h3 className="section-title">

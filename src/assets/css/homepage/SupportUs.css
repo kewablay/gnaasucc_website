@@ -2,13 +2,6 @@
   position: relative;
 }
 
-#arrow{
-  position: absolute;
-  top: -4.5%;
-  left: 50%;
-  width: 20px;
-  /* height: 30px; */
-}
 
 .support h3, .support p{
   margin-top : 0

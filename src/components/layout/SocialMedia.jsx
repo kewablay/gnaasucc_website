@@ -10,10 +10,11 @@ export function SocialMedia({ bgColor }) {
     <section
       className="social-media mb-200 pt-100 "
       style={{ background: bgColor }}
+      data-scroll-section
     >
       <div className="content-wrapper container">
         <h3 className="section-title text-center">
-           Follow us on social media for more <CircledText text={"updates"} />
+          Follow us on social media for more <CircledText text={"updates"} />
         </h3>
         <SocialLinks />
       </div>

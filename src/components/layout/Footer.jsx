@@ -4,7 +4,7 @@ import SocialLinks from "../utilities/SocialLinks";
 
 export function Footer() {
   return (
-    <footer className="footer py-100 bg-dark">
+    <footer className="footer py-100 bg-dark" data-scroll-section>
       <div className="content-wrapper container">
         <div className="logo  mb-100">
           <h3 className="text-660">GNAAS UCC </h3>

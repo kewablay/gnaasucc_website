@@ -12,7 +12,10 @@ export function Navbar() {
   };
 
   return (
-    <nav className={`container flex-between ${showMenu && "showMenu"}`}>
+    <nav
+      className={`container flex-between ${showMenu && "showMenu"}`}
+      data-scroll-section
+    >
       <div className="logo">GNAAS UCC</div>
       <div className="menu-backdrop">
         <div className={`navlinks `}>

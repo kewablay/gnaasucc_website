@@ -2,13 +2,13 @@ import React from "react";
 import '../../assets/css/utilities/Slider.css'
 import arrow from "../../assets/icons/arrow.png";
 
-function Slider() {
+function Slider({scrollBack, scrollForward, scrollBackRef, scrollForwardRef, sliderRef}) {
   return (
-    <div className="slider">
-      <button className="prev flex-center">
+    <div className="slider" ref={sliderRef}>
+      <button className="prev flex-center" onClick={scrollBack} ref={scrollBackRef}>
         <img src={arrow} alt="prev" />
       </button>
-      <button className="next flex-center">
+      <button className="next flex-center" onClick={scrollForward} ref={scrollForwardRef}>
         <img src={arrow} alt="next" />
       </button>
     </div>

@@ -1,0 +1,12 @@
+#circled-text{
+    position: relative;
+    margin-inline: .5rem;
+}
+
+#circled-text img{
+    position: absolute;
+    width: 110%;
+    height: 120%;
+    top: 0;
+    left: -10px;
+}

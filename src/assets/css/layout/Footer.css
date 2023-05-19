@@ -17,7 +17,7 @@ footer h3 {
   width: fit-content;
 }
 footer .social-icons img {
-  width: 30px;
+  width: 26px;
 }
 
 .flex-col:nth-child(1) {
@@ -40,6 +40,7 @@ footer .social-icons img {
   }
 }
 @media (min-width: 768px) {
+
   footer .container {
     max-width: 80%;
     margin-inline: auto;
@@ -47,6 +48,9 @@ footer .social-icons img {
   footer .content-wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+  footer .social-icons img {
+    width: 30px;
   }
   .flex-col:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;

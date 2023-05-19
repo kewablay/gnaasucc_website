@@ -4,13 +4,14 @@
   border-radius: 10px;
   overflow: hidden;
   /* height: 12rem;  */
-  object-fit: contain;
 }
 
 .dept-image img {
   width: 100%;
+  object-fit: cover;
   height: 100%;
 }
+
 
 .marquee {
   padding-block: .7rem;
@@ -33,4 +34,11 @@
 }
 .dept-pill + .dept-pill {
     margin-left: 1rem;
+}
+
+
+@media (min-width: 768px){
+  .dept-image {
+    border-radius: 500px;
+  }
 }

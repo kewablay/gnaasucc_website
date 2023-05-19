@@ -7,7 +7,7 @@ import vector2 from "../../assets/icons/vector2-church.png";
 
 export function Header() {
   return (
-    <header style={{ background: Poster }} className="flex-center mb-150">
+    <header style={{ background: Poster }} className="flex-center mb-150" data-scroll-section>
       <div className="header-gradient"></div>
       <video autoPlay playsInline muted loop poster={Poster}>
         <source src={bgVideo} />

@@ -17,7 +17,7 @@ export function WeeklyActivities() {
   };
 
   return (
-    <div className="activities container grid-5 mb-200">
+    <div className="activities container grid-5 mb-200" data-scroll-section>
       <div className="activity grid-title">
         <h3 className="text-650">Weekly Activities</h3>
         <p className="text-550">

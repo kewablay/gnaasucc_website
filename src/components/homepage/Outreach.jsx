@@ -1,11 +1,10 @@
 import React from "react";
 import "../../assets/css/homepage/Outreach.css";
-import outreach from "../../assets/eventHero.gif";
 import hero3 from "../../assets/images/hero3.png";
 
 export function Outreach() {
   return (
-    <section className="outreach mb-200 container grid-2">
+    <section className="outreach mb-200 container grid-2" data-scroll-section>
       <div className="content my-auto">
         <h3 className="section-title">
           Sharing God's word and spreading smiles.

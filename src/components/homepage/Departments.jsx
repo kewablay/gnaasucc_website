@@ -16,7 +16,10 @@ export function Departments() {
   ];
 
   return (
-    <section className="departments mb-200 bg-primary py-100">
+    <section
+      className="departments mb-200 bg-primary py-100"
+      data-scroll-section
+    >
       <div className="content-wrapper container grid-2">
         <div className="dept-content my-auto">
           <h3 className="section-title">Departments</h3>

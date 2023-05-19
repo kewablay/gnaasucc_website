@@ -3,6 +3,7 @@
 }
 .social-media .section-title {
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .social-media .social-icons {

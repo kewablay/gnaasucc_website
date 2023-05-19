@@ -93,6 +93,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+  .activity:nth-child(2){
+    grid-area: 2 / 1 / 2 / 3;
+  }
 }
 
 @media (min-width: 993px) {

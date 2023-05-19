@@ -134,6 +134,9 @@ a {
   /* justify-content: center; */
   /* align-items: center; */
 }
+.my-auto {
+  margin-block: auto;
+}
 .gap-1 {
   gap: 1rem;
 }
@@ -244,9 +247,7 @@ a {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
   }
-  .my-auto {
-    margin-block: auto;
-  }
+  
 }
 @media (min-width: 768px) {
   :root {

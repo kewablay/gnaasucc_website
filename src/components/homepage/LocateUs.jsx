@@ -6,10 +6,10 @@ import MapEmbed from "../utilities/MapEmbed";
 
 export function LocateUs() {
   return (
-    <section className="mb-200 container grid-2" data-scroll-section>
-      <div className="my-auto">
+    <section className="locate-us mb-200 container grid-2" data-scroll-section>
+      <div className="content-grid my-auto">
         <h3 className="section-title">
-          Locate Us{" "}
+          Locate Us
           <span id="rounded-arrow">
             <img src={roundedArrow} alt="." />
           </span>

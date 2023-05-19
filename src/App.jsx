@@ -1,26 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Homepage from "./pages/Homepage";
+import EventsPage from "./pages/EventsPage";
+import Gallery from "./pages/Gallery";
+import About from "./pages/About";
 
 import "./assets/css/LocomotiveScroll.css";
-import useLocomotiveScroll from "./hooks/useLocomotiveScroll";
 
-// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function App() {
-  // const options = {
-  //   smooth: true,
-  // };
-
-  // const mainContainer = document.querySelector("#root");
-  useLocomotiveScroll(true)
   return (
     <>
-      {/* <LocomotiveScrollProvider options={options} containerRef={mainContainer}>
-      </LocomotiveScrollProvider> */}
-
-      
-        <Homepage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
   );
 }

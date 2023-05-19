@@ -10,8 +10,11 @@ import {
   SupportUs,
   LocateUs,
 } from "../components/Homepage";
+import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
 
 function Homepage() {
+  useLocomotiveScroll(true);
+
   return (
     <>
       <Navbar />

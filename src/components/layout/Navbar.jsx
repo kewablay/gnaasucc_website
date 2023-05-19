@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../../assets/css/layout/Navbar.css";
+import { Link } from "react-router-dom";
+
 
 export function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,11 +22,11 @@ export function Navbar() {
       <div className="menu-backdrop">
         <div className={`navlinks `}>
           <p id="menu-title">Menu</p>
-          <a href="#">Home</a>
-          <a href="#">Events</a>
-          <a href="#">Gallery</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link to={"/"} >Home</Link>
+          <Link to={"/events"} >Events</Link>
+          <Link to={"/gallery"} >Gallery</Link>
+          <Link to={"/about"} >About</Link>
+          <Link to={"/"} >Contact</Link>
           {/* <p id="copy-right">Gnaas UCC 2023</p> */}
         </div>
       </div>

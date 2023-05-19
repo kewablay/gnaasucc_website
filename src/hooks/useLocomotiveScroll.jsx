@@ -3,7 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "../assets/css/LocomotiveScroll.css";
 import imagesLoaded from "imagesloaded";
 
-export default function useLocomotiveScroll(start) {
+export default function useLocomotiveScroll(start, history) {
   return useEffect(() => {
     if (!start) return;
 
@@ -14,6 +14,7 @@ export default function useLocomotiveScroll(start) {
       smooth: true,
       multiplier: 1,
       class: "is-reveal",
+      smoothMobile: false,
     });
 
     imagesLoaded(document.querySelector("body"), function (instance) {
@@ -21,6 +22,7 @@ export default function useLocomotiveScroll(start) {
       locomotiveScroll.update();
     });
 
-    // new ResizeObserver(() => scroll.update()).observe(scrollElement);
+    // `useEffect`'s cleanup phase
+    return () => locomotiveScroll.destroy();
   }, [start]);
 }

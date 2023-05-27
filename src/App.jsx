@@ -7,7 +7,6 @@ import EventsPage from "./pages/EventsPage";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 
-import "./assets/css/LocomotiveScroll.css";
 
 
 function App() {

@@ -13,7 +13,7 @@ import {
 import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
 
 function Homepage() {
-  useLocomotiveScroll(true);
+  // useLocomotiveScroll(true);
 
   return (
     <>

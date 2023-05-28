@@ -18,7 +18,7 @@ function Homepage() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Header isMainheader={true} />
       <WeeklyActivities />
       <Events />
       <UpcomingActivities />

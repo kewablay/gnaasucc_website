@@ -12,9 +12,11 @@ export default function useLocomotiveScroll(start, history) {
     const locomotiveScroll = new LocomotiveScroll({
       el: scrollElement,
       smooth: true,
-      multiplier: 1,
+      multiplier: 3,
       class: "is-reveal",
+      reloadOnContextChange: true,
       smoothMobile: false,
+      
     });
 
     imagesLoaded(document.querySelector("body"), function (instance) {

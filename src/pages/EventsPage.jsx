@@ -1,6 +1,10 @@
 import React from "react";
-import { Navbar, SocialMedia, Footer } from "../components/layout";
+import { Navbar, Header, SocialMedia, Footer } from "../components/layout";
 import useLocomotiveScroll from "../hooks/useLocomotiveScroll";
+import UpcomingEvent from "../components/eventspage/UpcomingEvent";
+import AllEvents from "../components/eventspage/AllEvents";
+
+import eventsBg from "../assets/images/events-bg.png";
 
 function EventsPage() {
   useLocomotiveScroll(true);
@@ -8,7 +12,10 @@ function EventsPage() {
   return (
     <div>
       <Navbar />
-      <SocialMedia bgColor={"#FFF5E6"}/>
+      <Header isMainHeader={false} page={"Events"} bgImage={eventsBg} />
+      <UpcomingEvent />
+      <AllEvents />
+      <SocialMedia bgColor={"#FFF5E6"} />
       <Footer />
     </div>
   );

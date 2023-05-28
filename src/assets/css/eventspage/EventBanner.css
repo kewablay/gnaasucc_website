@@ -19,7 +19,11 @@
   width: 100px; 
   height: 100px;
 }
-
+.bannerImg2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 @media (min-width: 768px) {
     .bannerImg {

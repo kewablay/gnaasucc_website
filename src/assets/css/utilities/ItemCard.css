@@ -1,9 +1,11 @@
-.eventCard {
-}
-
-.eventCard-image {
+.itemCard-image {
   height: 22rem;
   background: var(--clr-grey-200);
+}
+.galleryCard-image {
+  height: 15rem;
+  background: var(--clr-grey-200);
+
 }
 
 .card-title {
@@ -11,13 +13,16 @@
   font-weight: var(--font-semi-bold);
   margin-bottom: 0;
 }
-.eventCard .small-text {
+.itemCard .small-text {
   margin-block: 0.3rem;
   font-size: 13px;
 }
 
 @media (min-width: 768px) {
-  .eventCard-image {
+  .itemCard-image {
     height: 35rem;
+  }
+  .galleryCard-image {
+    height: 18rem;
   }
 }

@@ -1,0 +1,23 @@
+.eventCard {
+}
+
+.eventCard-image {
+  height: 22rem;
+  background: var(--clr-grey-200);
+}
+
+.card-title {
+  font-size: var(--text-550);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0;
+}
+.eventCard .small-text {
+  margin-block: 0.3rem;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .eventCard-image {
+    height: 35rem;
+  }
+}

@@ -9,6 +9,12 @@ header {
   /* display: flex;
   justify-content: center; */
 }
+@media (min-width: 640px) {
+  header {
+    width: 100%;
+    height: 90vh;
+  }
+}
 .header-gradient {
   position: absolute;
   top: 0;
@@ -21,7 +27,8 @@ header {
     rgba(0, 0, 0, 0.842)
   );
 }
-video {
+video,
+.header-img {
   position: absolute;
   z-index: -1;
 }
@@ -42,29 +49,29 @@ h2 #imj {
   height: 2.1rem;
   object-fit: contain;
   margin-block: 0;
-  margin-inline: .5rem;
-  
+  margin-inline: 0.5rem;
 }
-h3 img:first-child{
+h3 img:first-child {
   transform: translateY(4px);
 }
-h3 img:last-child{
+h3 img:last-child {
   transform: translateY(-4px);
 }
 #imj img {
   width: 100%;
   height: 100%;
-
 }
 
 @media (min-aspect-ratio: 16/9) {
-  video {
+  video,
+  .header-img {
     width: 100vw;
     height: auto;
   }
 }
 @media (max-aspect-ratio: 13/9) {
-  video {
+  video,
+  .header-img {
     height: 100%;
     width: auto;
   }

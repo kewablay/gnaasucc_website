@@ -8,7 +8,7 @@ export function SupportUs() {
   return (
     <section className="support bg-secondary mb-200 py-100" data-scroll-section>
       <div className="content-wrapper container">
-        <div className="content-grid" id="s-content">
+        <div className="content-grid strip-mt" id="s-content">
           <h3 className="section-title">
             Support our efforts with a charitable{" "}
             <CircledText text={"donation."} />

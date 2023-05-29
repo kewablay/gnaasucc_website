@@ -9,7 +9,7 @@ function GalleryIntro() {
       <GridColTwo
         title={"Checkout our gallery of wonderful pictures"}
         content={
-          "Feast your eyes on a diverse collection of photos that capture the essence of our worship services, events, and community outreach programs."
+          "Feast your eyes on our diverse collection of photos showcasing worship services, events and many more."
         }
       />
 

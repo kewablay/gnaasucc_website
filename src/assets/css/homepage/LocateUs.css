@@ -7,7 +7,7 @@
   animation: 1s loading infinite;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 10px 0px 22px 4px rgb(88, 88, 88);
+  box-shadow: inset 5px 0px 4px 4px rgb(88, 88, 88);
 }
 .map img {
   object-fit: cover;

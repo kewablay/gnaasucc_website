@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/eventspage/AllEvents.css";
-import EventCard from "./EventCard";
+import ItemCard from "../utilities/ItemCard";
 
 function AllEvents() {
   return (
@@ -8,10 +8,10 @@ function AllEvents() {
       <p className="subtitle">All Events</p>
 
       <div className="allEvents grid-2">
-        <EventCard eventTItle={"Traditional Sabbath"} />
-        <EventCard eventTItle={"Music Fest"} />
-        <EventCard eventTItle={"House of Praise"} />
-        <EventCard eventTItle={"Seraphim Praise"} />
+        <ItemCard title={"Traditional Sabbath"} />
+        <ItemCard title={"Music Fest"} />
+        <ItemCard title={"House of Praise"} />
+        <ItemCard title={"Seraphim Praise"} />
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+.galleryBanner {
+  background: #edf7f5;
+  /* background: #0a031a; */
+  /* background-color: blue !important; */
+  /* width: 100%; */
+  height: 28rem;
+  border-block: 5px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--clr-grey-200);
+  animation: 1s loading infinite;
+  /* border-radius: 1rem; */
+  position: relative;
+}
+
+.galleryBanner video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  object-fit: cover;
+}

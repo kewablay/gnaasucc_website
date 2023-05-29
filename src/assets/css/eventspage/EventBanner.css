@@ -16,14 +16,24 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100px; 
+  width: 100px;
   height: 100px;
 }
-
+.bannerImg2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 60px;
+}
 
 @media (min-width: 768px) {
-    .bannerImg {
-        width: 150px;
-        height: 150px;
-    }
+  .bannerImg {
+    width: 150px;
+    height: 150px;
   }
+  .bannerImg2 {
+    width: 80px;
+    height: 100px;
+  }
+}

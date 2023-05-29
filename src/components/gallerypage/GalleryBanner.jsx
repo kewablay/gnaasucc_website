@@ -1,10 +1,13 @@
 import React from "react";
 import "../../assets/css/gallerypage/GalleryBanner.css";
+import galleryVid from "../../assets/gallery-video2.mp4";
 
 function GalleryBanner() {
   return (
-    <div className="galleryBanner flex-center mb-200 p-100">
-      <div className="strip-mt"></div>
+    <div className="galleryBanner mb-200">
+      <video autoPlay playsInline muted loop>
+        <source src={galleryVid} />
+      </video>
     </div>
   );
 }

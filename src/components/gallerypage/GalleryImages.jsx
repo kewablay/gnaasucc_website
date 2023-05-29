@@ -5,7 +5,7 @@ import GridColTwo from "../../components/utilities/GridColTwo";
 
 function GalleryImages() {
   return (
-    <div className="container mb-200" data-scroll-section>
+    <div className="gallery container mb-200" data-scroll-section>
       <GridColTwo
         title={"Pictures from recent programs"}
         content={

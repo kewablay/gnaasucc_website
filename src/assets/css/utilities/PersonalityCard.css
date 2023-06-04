@@ -1,0 +1,12 @@
+.p-card__image {
+  overflow: hidden;
+  height: 14rem;
+  background: var(--clr-grey-900);
+  /* animation: loading 1s infinite; */
+}
+
+.p-card .img-rounded {
+  border-radius: 50%;
+  height: 13rem;
+  aspect-ratio: 1/1;
+}

@@ -8,7 +8,7 @@ function ItemCard({ title, galleryCard }) {
         className={`${galleryCard ? "galleryCard-image" : "itemCard-image"}`}
       ></div>
       <div className="itemCard-content">
-        <h4 className="card-title">{title}</h4>
+        <h4 className="sub-title">{title}</h4>
         <p className="small-text">7th May, 2023</p>
       </div>
     </div>

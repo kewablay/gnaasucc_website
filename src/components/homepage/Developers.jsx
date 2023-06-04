@@ -122,7 +122,7 @@ export function Developers() {
             <div className="dev__card-content">
               <h3 className="name">{dev.name}</h3>
               <p className="role">{dev.role}</p>
-              <Button link={dev.linkedIn} />
+              <Button link={dev.linkedIn} text={"Connect"}/>
             </div>
           </div>
         ))}

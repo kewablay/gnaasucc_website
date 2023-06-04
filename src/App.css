@@ -114,6 +114,11 @@ a {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
 .flex {
   display: flex;
@@ -142,6 +147,10 @@ a {
 }
 .mb-100 {
   margin-bottom: 1rem;
+}
+/* used in patron title */
+.mb-title{
+  margin-bottom: 3rem;
 }
 .mb-200 {
   margin-bottom: var(--space-200) !important;
@@ -189,9 +198,18 @@ a {
   line-height: 130.5%;
   /* margin-bottom: 0; */
 }
+.sub-title {
+  font-size: var(--text-550);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0;
+}
 .section-content {
   font-size: var(--text-550);
   font-weight: var(--font-light);
+}
+.small-text {
+  margin-block: 0.3rem;
+  font-size: 13px;
 }
 .scroll-x {
   overflow-x: scroll !important;
@@ -247,9 +265,15 @@ a {
     max-width: 540px;
     margin-inline: auto;
   }
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 640px) {
   .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-3 {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -259,6 +283,10 @@ a {
     --text-650: 30px;
     --space-100: 100px;
     --space-200: 180px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
   }
 }
 

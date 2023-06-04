@@ -8,15 +8,7 @@
 
 }
 
-.card-title {
-  font-size: var(--text-550);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 0;
-}
-.itemCard .small-text {
-  margin-block: 0.3rem;
-  font-size: 13px;
-}
+
 
 @media (min-width: 768px) {
   .itemCard-image {

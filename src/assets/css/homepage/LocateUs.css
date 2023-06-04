@@ -7,7 +7,7 @@
   animation: 1s loading infinite;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 5px 0px 4px 4px rgb(88, 88, 88);
+  /* box-shadow: inset 5px 0px 4px 4px rgb(88, 88, 88); */
 }
 .map img {
   object-fit: cover;
@@ -29,6 +29,9 @@
     height: 1.5rem;
     margin-inline: 0.6rem;
     transform: translateY(3.5px);
+  }
+  .content-grid {
+    margin: auto !important;
   }
 }
 

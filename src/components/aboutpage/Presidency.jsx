@@ -3,7 +3,7 @@ import PersonalityCard from "../utilities/PersonalityCard";
 
 function Presidency() {
   const Presidency = [
-    { name: "Emmanuel Nkoom", role: "Main President" },
+    { name: "Emmanuel Ncoom", role: "Main President" },
     { name: "Emmanuel Ackaah", role: "First Assist" },
     { name: "Henry Kankam", role: "Second Assist" },
   ];
